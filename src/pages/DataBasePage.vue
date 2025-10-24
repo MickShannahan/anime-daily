@@ -15,9 +15,9 @@ const route = useRoute()
 
 watch(route, () => {
   if (route.query?.q) {
-    getAnime('', route.query)
+    getAnime('', { ...route.query, limit: 20 })
   } else {
-    getAnime('ranking', { rating_type: 'tv', limit: 15 })
+    getAnime('ranking', { rating_type: 'tv', limit: 20 })
   }
   searchTerm.value = route.query.q?.toString()
 }, { immediate: true })

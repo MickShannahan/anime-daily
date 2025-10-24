@@ -53,7 +53,7 @@ const { anime } = defineProps({
   }
 
   .details-hover {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--bs-white);
     position: absolute;
     width: 100%;
@@ -61,14 +61,15 @@ const { anime } = defineProps({
     // backdrop-filter: blur(3px);
     text-shadow: 0px 0px 5px black;
     bottom: 0;
-    background-color: rgba(var(--bs-dark-rgb), .65);
+    background: linear-gradient(to top, rgba(var(--bs-black-rgb), .8) 80%, transparent);
     transition: all .2s ease;
-    margin-bottom: -23.5em;
+    margin-bottom: -19.6em;
   }
 
   &:hover .details-hover {
     margin-bottom: -50%;
     backdrop-filter: blur(5px) brightness(.5);
+    background: linear-gradient(to top, rgba(var(--bs-black-rgb), .5) 80%, transparent);
 
     .title {
       color: var(--bs-cyan);
