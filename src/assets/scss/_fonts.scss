@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Bitcount+Grid+Single:wght@100..900&family=Cherry+Bomb+One&family=M+PLUS+Rounded+1c&family=Yuji+Boku&display=swap');
+
+body {
+  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.f-cherry-bomb {
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+}
+
+.f-bitcount {
+  font-family: "Bitcount Grid Single", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.f-yuji-boku {
+  font-family: "Yuji Boku", serif;
+  font-weight: 400;
+  font-style: normal;
+}
