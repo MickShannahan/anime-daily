@@ -1,7 +1,7 @@
 @import '_main.scss';
 
 body {
-  background: url(@/assets/img/gurrenbg.png);
+  background: url(@/assets/img/noisy-bg.png);
   background-size: cover;
   background-position: right;
   background-attachment: fixed;
@@ -11,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  backdrop-filter: saturate(.2) blur(2px) contrast(100) contrast(.5) brightness(.25);
+  // backdrop-filter: saturate(.2) blur(2px) contrast(100) contrast(.5) brightness(.25);
   background-color: rgba(var(--bs-dark-rgb), .5);
 }
 
@@ -30,4 +30,12 @@ main {
 
 .border-gradient {
   border: solid 1px transparent;
+}
+
+.glass-box {
+  border: solid 1px transparent;
+  backdrop-filter: blur(20px) brightness(.8);
+  background-color: rgba(0, 0, 0, .5);
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)) padding-box,
+    linear-gradient(to left, rgba(203, 219, 255, 0.2), rgba(55, 135, 255, 0.2)) border-box;
 }

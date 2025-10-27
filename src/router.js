@@ -30,7 +30,24 @@ const routes = [
   {
     path: '/game',
     name: 'Game',
-    component: loadPage('GamePage')
+    component: loadPage('GamePage'),
+    children: [
+      {
+        path: 'frames',
+        name: 'Games Frame',
+        component: loadPage('GameFramesPage')
+      },
+      {
+        path: 'characters',
+        name: 'Games Characters',
+        component: loadPage('GameCharactersPage')
+      },
+      {
+        path: 'guess',
+        name: 'Games Guess',
+        component: loadPage('GameGuessPage')
+      },
+    ]
   }
 ]
 

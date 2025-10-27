@@ -1,5 +1,5 @@
 import { reactive } from 'vue'
-import { Anime } from './models/Anime.js'
+import { Anime, AnimeDetails } from './models/Anime.js'
 
 // NOTE AppState is a reactive object to contain app level data
 export const AppState = reactive({
@@ -9,6 +9,9 @@ export const AppState = reactive({
   account: null,
 
   /** @type {Anime[]} */
-  animes: []
+  animes: [],
+
+  /** @type {AnimeDetails} */
+  GameFramesAnime: null,
 })
 
